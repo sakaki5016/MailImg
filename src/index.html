@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Image Compression For Mail</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="layout.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onload="onloadLayout();" style="overflow-x: hidden;">
+<div id="screen">
+	<div id="captionDiv" style="font-size: 24pt; width:100%; height: 4em; background-color: lightseagreen;">
+		<div id="captionStrDiv" style="width: 100%; height: 2em; padding-top: 1em; padding-left: 1em;">Image Compression For Mail</div>
+	</div>
+	<div id="fileListDiv" style="width: 100%; min-height: 15em; background-color: gainsboro; overflow-y: scroll;">
+	</div>
+	<div id="bottomCtrlDiv" style="margin-top: .5em;">
+		<button id="folderSelect" onclick="onClickFolderSelect();" type="button">フォルダ選択</button>
+		<button id="fileSelect" onclick="onClickFileSelect();" type="button">ファイル選択</button>
+		<button id="imageClearBtn" onclick="onImageClearBtn();" type="button">クリア</button>
+		<span id="selFolderDisp"></span>
+		<span ="rightCtrlSpan" style="float: right;">
+			<label style="margin-right: .5em;">
+				<input type="radio" name="sizeRadio" value="500" onchange="onChangeSizeRadio();">S
+			</label>
+			<label style="margin-right: .5em;">
+				<input type="radio" name="sizeRadio" value="750" onchange="onChangeSizeRadio();" checked>M
+			</label>
+			<label style="margin-right: .5em;">
+				<input type="radio" name="sizeRadio" value="1000" onchange="onChangeSizeRadio();">L
+			</label>
+			<label style="margin-right: 2em;">
+				<input type="radio" name="sizeRadio" value="input" onchange="onChangeSizeRadio();">
+				size:<input type="number" id="settingSize" style="width:5em;" value="750" disabled>
+			</label>
+			<button id="execBtn" onclick="onClickExecBtn();" type="button">ZIP保存</button>
+		</span>
+	</div>
+	<canvas id="compCanvas" style="display: none;"></canvas>
+</div>
+</body>
+</html>

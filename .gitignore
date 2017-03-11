@@ -1,0 +1,9 @@
+#無視するディレクトリ
+node_modules/
+pkg/
+src/css/
+src/fonts/
+src/Images/
+src/js/
+src/output/
+src/node_modules/

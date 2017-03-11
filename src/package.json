@@ -1,0 +1,16 @@
+{
+  "name": "ICForMail",
+  "version": "0.9.0",
+  "main": "main.js",
+  "dependencies": {
+    "archiver": "^1.3.0",
+    "urlsafe-base64": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sakaki",
+  "license": "ISC",
+  "description": "Image Compression For Mail"
+}
